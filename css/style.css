@@ -1,0 +1,346 @@
+/* ここから下に記載していく */
+
+/* ステップ１．ヘッダー
+--------------------------------------*/
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    /* width: 210px; */
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.main-nav{
+    display: flex;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 50px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+
+
+/* ステップ２．タイトル
+----------------------------------------*/
+.page-title {
+    position: relative;
+    align-items: center;
+}
+
+.page-title h2 {
+    color:white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+}
+
+.page-title p {
+    font-size: 30px;
+}
+
+.page-title img {
+    width: 100%;
+}
+
+/* ステップ３．ABOUT
+----------------------------------------*/
+.ABOUT {
+    text-align: center;
+    line-height: 200%;
+    font-size: 16px;
+}  
+
+
+/* ステップ４．4枚画像、横並び
+----------------------------------------*/
+.ul {
+    width: 100%;
+}
+
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-size: cover;
+}
+
+/* ステップ５．画像の横に文章　
+-----------------------------------------*/
+
+.wrapper{
+    width:100%;
+    background-color:#fafafa;
+}
+.wrapper .container{
+    /* max-width:1000px; */
+    margin:0px auto;
+}
+
+/* content */
+.wrapper .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.wrapper .content-item {
+    width:100%;
+}
+.wrapper .content-item {
+    width:50%;
+    }
+
+.wrapper .image{
+    width: 100%;
+}
+.wrapper .text{
+    padding:50px;
+    text-align: center;
+}
+.wrapper .text .heading{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* ステップ６．NEWS　
+-----------------------------------------*/
+.NEWS {
+    display: flex;
+    justify-content: center;
+}
+
+.NEWS .container {
+    text-align: left;
+    font-size: 14px;
+    margin:0 30px;
+}
+
+/*ホバー無し状態のスタイル*/
+.hover01 {
+    background: #fff;
+    border: none;
+}
+/*ホバー無し状態のスタイル＿ここまで*/
+  
+/*ホバー有り状態のスタイル*/
+.hover01:hover {
+    background: #ffd61a;
+}
+/*ホバー有り状態のスタイル＿ここまで*/
+
+/* More */
+.More {
+    background:#ffd61a;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0px 100px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.More:hover {
+    background: #0090aa;
+}
+
+.wrapper {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.table {
+    margin: auto;
+}
+
+.label {
+    display: block;
+}
+
+.Form {
+    margin: auto;
+    max-width: 720px;
+    text-align: left;
+}
+}
+
+  .Form-Item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    .Form-Item {
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .Form-Item-Label {
+    width: 100%;
+    max-width: 300px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+  }
+
+  .Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #545454;
+    color: #fff;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label-Required {
+      border-radius: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 32px;
+      font-size: 10px;
+    }
+  }
+  .Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Input {
+      margin-left: 0;
+      margin-top: 18px;
+      height: 40px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+
+  .select {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 450px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+
+  .Form-Btn {
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    display: block;
+    background: #ffd61a;
+    color: #fff;
+    font-weight: bold;
+    height: 80px;
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #bfbfbf;
+    }
+
+    .border-bottom-top {
+        border-bottom: 1px solid #bfbfbf;
+        border-top: 3px solid #bfbfbf;
+    }
+
+    .border-left-top {
+        border-top: 3px solid #bfbfbf;
+        border-left: 1px solid #bfbfbf;
+    }
+    .border-top {
+        border-top: 3px solid #bfbfbf;
+    }
+    
+    .border-left {
+        border-left: 1px solid #bfbfbf;
+    }
+
+    .border-left-end {
+        border-left: 1px solid #bfbfbf;
+        border-bottom: 3px solid #bfbfbf;
+    }
+
+    .border-end {
+        border-bottom: 3px solid #bfbfbf;
+        vertical-align: top;
+    }
+
+  
+ .footer {
+    background: #707070;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+.footer p {
+    color: white;
+    font-size: 16px;
+  }
